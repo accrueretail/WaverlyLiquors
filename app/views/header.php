@@ -260,10 +260,11 @@ $store_filters = getStoreFilters();
         <div class="load-bar"></div>
       </div>
       
-<!--
-      <div class="location"><i aria-hidden="true" class="fa fa-map-marker"></i><span class='storename'><?php echo $store_details->StoreName.' - '.$store_details->State;?></span>&nbsp;<a href="#" data-toggle="modal" data-target="#exampleModal">change store</a></div>
+
+      <div class="location"><i aria-hidden="true" class="fa fa-map-marker"></i><span class='storename'><?php echo $store_details->StoreName.' - '.$store_details->State;?></span>&nbsp;<!-- <a href="#" data-toggle="modal" data-target="#exampleModal">change store</a> -->
+      </div>
       
--->
+
   </nav>
   </div>
   
