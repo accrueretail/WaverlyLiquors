@@ -1,0 +1,6 @@
+{
+    "require": {
+        "stefangabos/zebra_curl": "^1.5",
+	"scssphp/scssphp": "^1.4.1"
+    }
+}

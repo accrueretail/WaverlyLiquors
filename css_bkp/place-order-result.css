@@ -1,0 +1,53 @@
+.success-failed-order-section {
+    margin: 15% auto 10% auto;
+    display: block;
+    text-align: center;
+}
+.success-failed-order-section .success-order-section h2 {
+    font-family: montserratbold;
+    font-size: 38px;
+    color: #027923;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    letter-spacing: 0.6px;
+}
+.success-failed-order-section .success-order-section h4 {
+    font-family: poppinsregular;
+    font-size: 18px;
+    color: #333;
+    display: block;
+    padding-top: 5px;
+    letter-spacing: 1px;
+}
+.success-failed-order-section .order-details-section h4 {
+    font-family: poppinsregular;
+    font-size: 20px;
+    color: #333;
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.success-failed-order-section .order-details-section h2 {
+    font-family: poppinsbold;
+    font-size: 32px;
+    color: #333;
+    display: block;
+    padding-top: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+.success-failed-order-section button.continue-shop {
+    font-family: poppinsregular !important;
+    outline: none;
+    background-color: #a82c2e;
+    color: #fff !important;
+    border-color: #a82c2e;
+    padding: 10px 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: none !important;
+}

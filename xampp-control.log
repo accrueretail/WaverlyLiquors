@@ -1,0 +1,17 @@
+10:09:46 PM  [main] 	Initializing Control Panel
+10:09:46 PM  [main] 	Windows Version:  Enterprise  64-bit
+10:09:46 PM  [main] 	XAMPP Version: 7.3.27
+10:09:46 PM  [main] 	Control Panel Version: 3.2.4  [ Compiled: Jun 5th 2019 ]
+10:09:46 PM  [main] 	Running with Administrator rights - good!
+10:09:46 PM  [main] 	XAMPP Installation Directory: "c:\xampp\"
+10:09:46 PM  [main] 	Checking for prerequisites
+10:10:02 PM  [main] 	All prerequisites found
+10:10:02 PM  [main] 	Initializing Modules
+10:10:02 PM  [Apache] 	XAMPP Apache is already running on port 80
+10:10:02 PM  [Apache] 	XAMPP Apache is already running on port 443
+10:10:02 PM  [mysql] 	XAMPP MySQL is already running on port 3306
+10:10:02 PM  [main] 	Starting Check-Timer
+10:10:02 PM  [main] 	Control Panel Ready
+10:59:34 PM  [main] 	Deinitializing Modules
+10:59:34 PM  [main] 	Deinitializing Control Panel
+

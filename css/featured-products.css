@@ -1,0 +1,54 @@
+.icon-add-to-my-cart:before {
+    content: '\eafe';
+}
+[class*=" icon-"]:before, [class^=icon-]:before {
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    font-family: fontello;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+i.active, i.icon-add-to-my-cart, i.icon.icon-remove-cart.active {
+    padding-top: 67px;
+    display: inline-block;
+}
+
+i.fa-cart-plus, i.icon-add-to-my-cart {
+    font-size: 32px;
+    color: #c2c4ca;
+    cursor: pointer;
+}
+i.icon-favorites {
+    padding-top: 23px!important;
+    display: block;
+}
+i.icon-favorites {
+    font-size: 26px;
+    color: #c2c4ca;
+    cursor: pointer;
+}
+i.active, i.icon-add-to-my-cart, i.icon.icon-remove-cart.active {
+    padding-top: 67px;
+    display: inline-block;
+}
+.active, .icon.icon-favorites .active, .item_img .icon.icon-favorites.active {
+    color: #a82c2e!important;
+}
+i.icon.icon-remove-cart.active {
+    font-size: 32px;
+    color: #a82c2e!important;
+    cursor: pointer;
+}

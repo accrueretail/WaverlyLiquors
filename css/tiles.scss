@@ -1,0 +1,15 @@
+@import "variable.scss";
+h1.tiles{font-size: 23px;}
+h2.tiles{font-size: 20px;}
+h3.tiles{font-size: 18px;}
+.margin-top{margin: 110px 0 30px 0 !important; display: table; width: 100%;}
+p {
+    font-family: $poppins-light;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.14;
+    letter-spacing: .4px;
+    color: #000;
+}
+.aboutus-left-div-img{text-align: center;}

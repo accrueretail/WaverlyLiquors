@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "fontello";
+    src: url(../assets/fonts/fontello.eot);
+    src: url(../assets/fonts/fontello.ttf);
+    src: url(../assets/fonts/fontello.woff);
+    src: url(../assets/fonts/fontello.woff2);
+    font-weight : normal;
+    font-style : normal;
+}
+    @font-face {
+    font-family: "montserratbold";
+    src: url(../assets/fonts/montserrat-bold-webfont.woff);
+    src: url(../assets/fonts/montserrat-bold-webfont.woff2);
+    }
+    @font-face {
+        font-family: "montserratregular";
+        src: url(../assets/fonts/montserrat-regular-webfont.woff);
+        src: url(../assets/fonts/montserrat-regular-webfont.woff2);
+        src: url(../assets/fonts/Montserrat-Regular.ttf);
+        }
+    @font-face {
+    font-family: "poppinsregular";
+    src: url(../assets/fonts/poppins-light-webfont.woff);
+    src: url(../assets/fonts/poppins-light-webfont.woff2);
+    src: url(../assets/fonts/poppins-medium-webfont.woff);
+    src: url(../assets/fonts/poppins-medium-webfont.woff2);
+    src: url(../assets/fonts/poppins-regular-webfont.woff);
+    src: url(../assets/fonts/poppins-semibold-webfont.woff2);
+    }
+    @font-face {
+        font-family: "poppinsbold";
+        
+    src: url(../assets/fonts/poppins-bold-webfont.woff);
+    src: url(../assets/fonts/poppins-bold-webfont.woff2);
+    }
+    @font-face {
+    font-family: "raleway-regular";
+    src: url(../assets/fonts/raleway-heavy-webfont.woff);
+    src: url(../assets/fonts/raleway-heavy-webfont.woff2);
+    src: url(../assets/fonts/raleway-light-webfont.woff);
+    src: url(../assets/fonts/raleway-light-webfont.woff2);
+    src: url(../assets/fonts/raleway-medium-webfont.woff);
+    src: url(../assets/fonts/raleway-medium-webfont.woff2);
+    src: url(../assets/fonts/raleway-regular-webfont.woff);
+    src: url(../assets/fonts/raleway-regular-webfont.woff2);
+    src: url(../assets/fonts/raleway-semibold-webfont.woff);
+    src: url(../assets/fonts/raleway-semibold-webfont.woff2);
+    src: url(../assets/fonts/raleway-thin-webfont.woff);
+    src: url(../assets/fonts/raleway-thin-webfont.woff2);
+
+ }

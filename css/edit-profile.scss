@@ -1,0 +1,144 @@
+@import "variable.scss";
+/* Edit Profile */
+span.img_class {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    border: solid 1px #ccc;
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+    background-color: #777;
+    position: relative;
+}
+.float_right button.btn-profile{width: 93%;}
+.profile-edit-section img#profile_imge_output{ top: -8px; width: 92px; height: 90px; left: -2px;}
+img#profile_imge_output {
+    width:91px;
+    height: 92px;
+    vertical-align: middle;
+    top: -9px;
+    position: absolute;
+    left: -2px;
+    border-radius: 100%;
+}
+.inputWrapper {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: $lukas-color;
+    border-radius: 50%;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    left: -50px;
+    top: 30px;
+}
+.fileInput {
+    width: 30px;
+    height: 30px;
+    background-image: none;
+    opacity: 1;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0px;
+    opacity: 0;
+    z-index: 9;
+    position: absolute;
+}
+.inputWrapper span {
+    font-size: 14px;
+    padding: 0px 0px 0px 0px;
+    margin-top: -10px;
+    position: absolute;
+    left: 8px;
+    top: 18px;
+}
+.profile-edit-section form label {
+    font-family: $poppins-regular;
+    width: 90%;
+}
+.profile-edit-section form label span {
+    color: $lukas-color;
+}
+.profile-edit-section .form-control {
+    border-radius: 0px;
+    height: 45px !important;
+    border: solid 1px #e6e6e6;
+}
+input.form-control{ line-height: 7.428571!important;}
+.input-group {
+    position: relative;
+    display: block !important;
+    border-collapse: separate;
+}
+.input-group .form-control{position: relative;}
+.date-picker {
+    height: 120px;
+}
+.date-picker .form-group {
+    width: 90%;
+    position: relative !important;
+}
+.profile-edit-section .date-input {
+    width: 78.5% !important;
+    color: #555;
+    font-weight: bold;
+    display: inline;
+}
+.dt-btn {
+    width: 35px;
+    float: left;
+}
+.dt-btn button {
+    height: 45px;
+}
+.dt-btn i {
+    color: #fff;
+    font-size: 23px;
+}
+.date-msg-alert {
+    padding-top: 7px;
+    display: block;
+    float: left;
+    clear: left;
+}
+.m-radio {
+    float: left;
+}
+.m-radio .checkmark {
+    top: 0px !important;
+}
+.profile-edit-section a.novalue {
+    background: $lukas-color !important;
+    padding: 11px 25px 11px 25px;
+    font-size: 0.9em !important;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: none !important;
+    border: none;
+}
+.profile-edit-section a.novalue:hover{color: #fff;}
+.profile-edit-section button.close {
+    padding: 11px 25px !important;
+    background-color: $lukas-color !important;
+    font-size: 0.9em;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: none !important;
+}

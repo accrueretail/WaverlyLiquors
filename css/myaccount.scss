@@ -1,0 +1,54 @@
+@import "variable.scss";
+.margin-bottom-20 .btn-container button.btn{margin-right: 15px;}
+.m-height {
+    min-height: 600px !important;
+}
+.common-margin-top{ margin-top: 100px;}
+ul.panel-group {
+    margin: 0 0 30px 0;
+    padding: 0px;
+}
+.bottle-panel-container {
+    border: solid 1px #e5e5e5 !important;
+    border-radius: 2px !important;
+    margin-bottom: -6px !important;
+    list-style: none;
+}
+.left-panel-section {
+    background-color: #f8f8f8;
+}
+h4.left-panel-title {
+    margin: 0px;
+    padding: 5px 0px;
+    text-transform: uppercase;
+}
+h4.left-panel-title a {
+    padding: 10px 20px;
+    color: #222;
+    background-color: #f8f8f8;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+h4.left-panel-title a:hover, h4.left-panel-title a:focus {
+    text-decoration: none;
+    background-color: #f8f8f8;
+    outline: none;
+    text-decoration: none;
+    background-color: #f8f8f8;
+}
+.myac-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.bottles-brand {
+    color: $lukas-color;
+}
+.border-line h4 {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #d7d7d7;
+}

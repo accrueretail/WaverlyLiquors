@@ -1,0 +1,106 @@
+<?php
+if($_SESSION['USER_ID'] == '' || $_SESSION['USER_ID'] == 0){
+	$url = $siteUrl."/login?returnUrl=cart";
+	header("Location: ".$url);
+}
+//print_r($_SESSION);
+$title = $siteName."-".Cart;
+
+//print_r($_POST);
+$cart_update_response = json_decode($_POST['cartinfo']);
+//print_r($cart_update_response);
+if(!isset($_POST['PaymentTypeId']) || $_POST['PaymentTypeId']==''){
+    header("Location: ".$siteUrl."/cart");
+}
+else if($_POST['PaymentTypeId'] == 8){
+    $pay_type='Online'; 
+
+    $url = API_URL.'api//WPHostedCheckout/InitializePayment';
+    $data = array(
+        "CancelButton"=>"On",
+        "CompleteUrl"=>"http://phpdemo.accrueretail.com/debucus/payment", 
+        "DefaultSwipe"=>"Manual",
+        "DisplayStyle"=>"custom",
+        "Frequency"=>"OneTime",
+        "Invoice"=>"834287",
+        "Memo"=>"First Name: Sagar,Last Name: Sagar Contact: (807)-409-5943,Email Id: sagar.sijju@gmail.com",
+        "MerchantID"=>"",
+        "OperatorID"=>"834287",
+        "Password"=>"",
+        "ReturnUrl"=>"http://phpdemo.accrueretail.com/debucus/payment",
+        "StoreId"=>$storeId,
+        "TaxAmount"=> 3.84,
+        "TotalAmount"=> 61.82,
+        "TranType"=>"Sale"
+    );
+
+    $curl = curl_init();
+    $response = api_call($curl, $url, $data);
+
+    $payment_initial_response = json_decode($response);
+
+    if($payment_initial_response->ErrorDetail !=''){
+        create_session($appId, $storeId);
+        //print_r($_SESSION);
+        //unset($_SESSION['SESSION_ID']);
+        header("Location: ".$siteUrl."/cart");exit;
+    }
+
+    //print_r($payment_initial_response);
+    if($payment_initial_response->StatusCode == 200){
+        $url = API_URL.'api//WPHostedCheckout/VerifyPayment';
+        $data = array(
+            "MerchantID"=>"",
+            "Password"=>"",
+            "PaymentId"=>$payment_initial_response->Data->PaymentId,
+            "StoreId"=>$storeId
+        );
+        //print_r($data);
+        $curl = curl_init();
+        $response = api_call($curl, $url, $data);
+
+        $payment_verification_response = json_decode($response);
+        //print_r($payment_verification_response);
+
+        if($payment_verification_response->ErrorDetail !=''){
+            create_session($appId, $storeId);
+            //print_r($_SESSION);
+            //unset($_SESSION['SESSION_ID']);
+            header("Location: ".$siteUrl."/cart");exit;
+        }
+    }else {
+        $error = "Invalid payment method";
+    }
+
+}else if($_POST['PaymentTypeId'] == 2){
+    $pay_type='Offline'; 
+
+    $url = API_URL.'api/Cart/OrderInsert';
+    $data = array("StoreId"=>$storeId,"AppId"=>$appId,"SessionId"=>$_SESSION['SESSION_ID'],"UserId"=>$_SESSION['USER_ID'],"CartId"=>$_SESSION['CartId'],"DeviceId"=>$_SESSION['DEVICE_ID'],"DeviceType"=>"W", "OrderTypeId"=>1, "PaymentTypeId"=>$_POST['PaymentTypeId'], "UserRemarks"=>addslashes($_POST['remarks']));
+    $curl = curl_init();
+    /*if($_SESSION['USER_ID'] == '1385'){
+    print_r($_SESSION);
+    print_r($data);
+   
+    }*/
+    $response = api_call($curl, $url, $data);
+    //print_r($response);
+    $payment_response = json_decode($response);
+
+    if($payment_response->ErrorDetail !=''){
+        create_session($appId, $storeId);
+        //print_r($_SESSION);
+        //unset($_SESSION['SESSION_ID']);
+        header("Location: ".$siteUrl."/cart");exit;
+    }else{
+        $_SESSION['CartId'] = '';
+        $cache1 = CACHE."/Products.cache"; 
+        unlink($cache1);
+
+        //$cache2 = CACHE."/StoreHome.cache"; 
+        //unlink($cache2);
+    }
+
+}
+
+?>  

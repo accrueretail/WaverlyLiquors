@@ -1,0 +1,31 @@
+/* input{display: none;} */
+.dropdown > ul.dropdown-menu .arrowup {
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid #FFF;
+    position: absolute;
+    top: -16px;
+    margin-left: 26px;
+    z-index: 9999;
+    display: list-item;
+    
+}
+.dropdown > ul.dropdown-menu .nav-link.visited::after  {display: none; visibility: hidden;}
+.nav-pills > a.nav-link, .nav-item a{ font-family: $poppins-bold !important; font-size: 12px !important; color: #222 !important;}
+.dropdown-menu ul.flex-column li{padding: 0; float: left; width: 100%;} .nav>li.nav-item>a:focus, .nav>li.nav-item>a:hover, .navbar .nav>li.nav-item>a{background-color: transparent !important;}
+.dropdown:hover .dropdown-menu{display: block;}a.dropdown-toggle:hover > ul.dropdown-menu{display: block !important;}.nav-list li a{float: left;width: 100%;}
+.dropdown-menu .nav-link li a.active{display: block;}
+.dropdown-menu .menu_sec_div a { color: #a82c2e !important; margin: 0 0 3px 0; padding: 5px;}
+.dropdown-menu .nav-link.menu_sec_div a:hover, .dropdown-menu .menu_sec_div a.active{
+    margin: 0 0 3px 0; background-color: #a82c2e !important; color: #fff !important; padding: 5px; text-decoration: none;
+}
+.dropdown:not(.nohover):hover .dropdown-menu{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s,opacity .3s linear;
+    width: 50%;
+    display: inline-table;
+    margin-left: -25px;
+}
+.dropdown:visited::after > .dropdown-menu.show, .dropdown:hover::after > .dropdown-menu.show{display: none; visibility: hidden;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{background-color: #f8f8f8 !important;}

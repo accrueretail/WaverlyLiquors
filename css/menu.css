@@ -1,0 +1,8 @@
+/* input{display: none;} */
+.dropdown:hover .dropdown-menu{ display: block;}
+a.dropdown-toggle:hover > ul.dropdown-menu{display: block !important;}
+.nav-list li a{ float: left; width: 100%;}
+.dropdown.active > ul.dropdown-menu{ visibility: visible; display: block; }
+.dropdown-menu .nav-link li a.active{ display: block;}
+.dropdown:not(.nohover):hover .dropdown-menu{visibility: visible;}
+.navbar-default .navbar-nav>.active>a{ background-color: transparent;}

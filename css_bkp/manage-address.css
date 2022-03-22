@@ -1,0 +1,62 @@
+.location-address {
+    text-align: right;
+    width: 100%;
+}
+.location-address button {
+    margin-right: 0;
+}
+.btn-address {
+    background-color: #a82c2e;
+    color: #fff;
+    font-family: poppinsregular;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 14px;
+    margin-bottom: 10px;
+}
+.address-table-tile {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+    border: solid 1px #f4f4f4;
+    padding: 10px 15px 5px 15px;
+    margin-bottom: 20px;
+    min-height: 90px;
+}
+.address-table-tile .table-responsive {
+    border: 1px solid transparent;
+}
+.address-table-tile tr td {
+    border-top: 0px solid #ddd;
+    padding: 5px 15px;
+}
+.dropdown-favorite {
+    position: absolute !important;
+    right: 30px;
+}
+.address-table-tile tr td .more-icon {
+    font-size: 18px !important;
+    font-weight: normal;
+    position: absolute;
+    right: 10px !important;
+    cursor: pointer;
+}
+.dropdown-favorite-open {
+    position: relative !important;
+    left: 0px !important;
+}
+.dropdown-favorite ul li a {
+    cursor: pointer;
+}
+.address-table-tile tr td {
+    border-top: 0px solid #ddd;
+    padding: 5px 15px;
+}
+.add-new-address .address-container-section h5 {
+    font-size: 20px;
+    font-family: poppinsbold;
+}
+.add-new-address .address-container-section p {
+    font-family: poppinsregular;
+    font-size: 14px;
+}

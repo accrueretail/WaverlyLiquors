@@ -1,0 +1,503 @@
+@import "variable.scss";
+// .product-accordion .collapse.in{display: block;}
+// .product-accordion .collapse{display: none;}
+// .product-accordion .show{display: block !important;}
+// .ui-datepicker{
+//     width: calc(100% - 72%);
+//     position: absolute;
+//     top: 593.5px !important;
+//     left: 439.013px;
+//     z-index: 1000;
+//     display: none;
+//     float: left;
+//     min-width: 160px;
+//     padding: 5px 0;
+//     margin: 2px 0 0;
+//     font-size: 14px;
+//     text-align: left;
+//     list-style: none;
+//     background-color: #fff;
+//     -webkit-background-clip: padding-box;
+//     background-clip: padding-box;
+//     border: 1px solid #ccc;
+//     border: 1px solid rgba(0,0,0,.15);
+//     border-radius: 4px;
+//     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+// }
+// .ui-datepicker-header {
+//     border-bottom: 0;
+//     border-radius: .25rem .25rem 0 0;
+//     padding-top: .25rem;
+//     display: table;
+//     align-items: center;
+//     width: 100%;
+// }
+.footer-tc li{
+    font-family: $poppins-light;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.14;
+    letter-spacing: .4px;
+    list-style: inherit;
+    font-weight: normal;
+}
+.footer-tc{ margin-bottom: 20px;}
+.ui-datepicker{width: 33em !important;}
+.profile-edit-section img.ui-datepicker-trigger {
+    width: 50px !important;
+    margin-left: -2px;
+    margin-top: 0px;
+}
+table tr{
+    padding: 0 0 10px!important;
+    margin: 0;
+}
+.fade{background-color:rgba(0,0,0,0.5) !important;}
+//.fade{background-color:rgba(56,56,56,.5) !important;}
+//.fade1{background-color:rgba(56,56,56,.5) !important;}
+.icon-view {
+    position: relative;
+}
+.icon-view i.fa {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+}
+.details_content.col-md-4.col-sm-4.col-lg-4.col-xs-12.animated.fadeInRight {
+    font-family: $poppins-regular;
+}
+.details_content h4.recipe_name {
+    font-family: $poppins-bold;
+    font-size: 26.4px;
+    font-stretch: normal;
+    line-height: 2.07;
+    letter-spacing: -.5px;
+    text-align: left;
+    color: #232323;
+}
+.details_content ul {
+    padding-left: 0;
+}
+.details_content ul h4.ingredients {
+    border-left: 5px solid $lukas-color;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-align: left;
+    color: #191919;
+}
+// .ngb-datepicker-navigation {
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-align: center;
+//     align-items: center;
+// }
+
+// .ui-datepicker-prev {
+//     display: -ms-flexbox;
+//     display: flex;
+//     float: left;
+//     -ms-flex: 1 1 auto;
+//     flex: 1 1 auto;
+//     padding-right: 0;
+//     padding-left: 0;
+//     margin: 0;
+//     width: 2rem;
+//     height: 2rem;
+//     color: #333 !important;
+
+//     border-style: solid;
+//     border-width: .2em .2em 0 0;
+//     display: inline-block;
+//     width: .75em;
+//     height: .75em;
+//     margin-left: .25em;
+//     margin-right: .15em;
+//     -webkit-transform: rotate(
+// -135deg
+// );
+//     transform: rotate(
+// -135deg
+// );
+// }
+// .ngb-datepicker.dropdown-menu .ui-datepicker-header .ngb-dp-arrow button.btn-link {
+//     background-color: transparent !important;
+// }
+.ui-icon {
+    display: none;
+}
+// .ui-datepicker-title {
+//     display: -ms-flexbox;
+//     /* display: flex; */
+//     -ms-flex: 1 1 9rem;
+//     flex: 1 1 9rem;
+//     margin: 0 auto;
+//     text-align: center;
+// }
+// .ui-datepicker-month, .ui-datepicker-year {
+//     font-size: 1.2rem !important;
+// }
+// .ui-datepicker-month, .ui-datepicker-year {
+//     -ms-flex: 1 1 auto;
+//     flex: 1 1 auto;
+//     padding: 0 .5rem;
+//     font-size: .875rem;
+//     height: 1.85rem;
+// }
+// .ui-datepicker-next {
+//     -ms-flex-pack: end;
+//     justify-content: flex-end;
+//     float: right;
+//     color: #333 !important;
+    
+
+//     border-style: solid;
+//     border-width: .2em .2em 0 0;
+//     display: inline-block;
+//     width: .75em;
+//     height: .75em;
+//     margin-left: .25em;
+//     margin-right: .15em;
+//     -webkit-transform: rotate(
+//         45deg
+//         );
+//             transform: rotate(
+//         45deg
+//         );
+//             margin-left: .15em;
+//             margin-right: .25em;
+// }
+// .ui-datepicker-next .ui-icon {
+//     -webkit-transform: rotate(
+// 45deg
+// );
+//     transform: rotate(
+// 45deg
+// );
+//     margin-left: .15em;
+//     margin-right: .25em;
+// }
+// .ui-datepicker-calendar {
+//     display: -ms-flexbox;
+//     display: flex;
+// }
+// .ui-datepicker-calendar {
+//     width: 100%;
+// }
+// .ui-datepicker-calendar thead, .ui-datepicker-calendar tbody, .ui-datepicker-calendar tbody tr{width: 100% !important; float: left;}
+// .ui-datepicker-calendar tr th{
+//     background-color: #fff !important; border-bottom: solid 1px #ccc !important; display: inline-table; 
+//     padding: 5px 21.98px;
+//     font-size: 10px;
+//     color: #333 !important;
+//     text-align: center;
+//     float: left;
+//     display: inline-block;
+// }
+// .ui-datepicker-calendar tr td span.ui-state-default{color: #777 !important; }
+// .ui-datepicker-calendar tr td  a.ui-state-default{color: #333 !important;}
+// .ui-datepicker-calendar tr td{text-align: center !important;min-width: 60px !important;}
+// .ui-datepicker-calendar tr td.date-hilight a{color: $lukas-color !important;}
+    
+// .ngb-dp-month {
+//     pointer-events: none;
+// }
+// .ui-datepicker-calendar{
+//     display: block;
+// }
+
+// .ngb-datepicker-month-view {
+//     pointer-events: auto;
+// }
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+input#search {
+	/* width: 350px;
+	height: 25px;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	outline: none;
+	border: 1px solid #ababab;
+	font-size: 20px;
+	line-height: 25px;
+	color: #ababab; */
+}
+.radiobox {
+    position: relative;
+}
+.radiobox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 20px;
+    width: 15px;
+    z-index: 1;
+    left: -20px;
+}
+.radiobox input ~ .checkmark {
+    background-color: transparent;
+    border: solid 1px #777;
+    border-radius: 50%;
+    left: -20px;
+}
+.radiobox .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+}
+.radiobox:hover input ~ .checkmark {
+    background-color: transparent;
+    border: solid 1px #777;
+    border-radius: 50%;
+}
+.radiobox input:checked ~ .checkmark {
+    background-color: $lukas-color;
+    border: solid $lukas-color;
+    /* border-width: 0 3px 3px 0; */
+    transform: rotate(
+45deg
+);
+}
+.btn_right {
+    text-align: right;
+    margin-right: 10px;
+}
+.text-right {
+    text-align: right;
+}
+.text-muted {
+    color: #777;
+}
+input#search:hover, input#search:focus {
+	/* color: #3b3b3b;
+	border: 1px solid #36a2d2;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1); */
+}
+.parallax {
+    background-image: url(https://liquorapps.com/Images/EventImgLarge/443bbe4a-afe8-49e5-810c-5b0e74c3e879.png);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Searchrelated_div {
+    margin: 10px 0px 20px 0;
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 10px;
+    border-radius: 0px;
+    overflow: hidden;
+}
+.contact-section {
+    margin-top: -70px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    box-shadow: 1px 15px 30px rgba(0, 0, 0, 0.2);
+}
+.contact-section .contactform {
+    background-color: #fff;
+    padding-top: 15px;
+}
+.contact-address-section {
+    height: 100%;
+    display: block;
+    min-height: 380px;
+    height: 100vh;
+}
+.contact-map {
+    height: 100vh;
+    display: contents;
+}
+button.contact {
+    background-color: $lukas-color;
+    font-size: 12.7px;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: .3px;
+    color: #fff;
+    padding: 10px 20px 8px;
+    border-radius: 0;
+    text-align: center;
+    border: $lukas-color;
+	margin-left: 0;
+}
+.contact-section input, .contact-section select, .contact-section textarea {
+    border-radius: 0;
+}
+
+.contact-textarea {
+    height: 320px !important;
+}
+.no-resize {
+    resize: none!important;
+}
+
+h4#results-text {
+	display: none;
+}
+.modelchainstore .form-control:focus{border-color: #ccc !important;}
+#login .form-control, #signup .form-control{ line-height: 37px !important;}
+.form-search{position: relative;}
+.border-bottom{ border-bottom: solid 1px #ccc; 
+    //font-size: 1em;
+    margin-bottom: 1px; 
+    //line-height: 17px;
+    padding: 10px 5px!important;}
+#results img{ max-width: 100%; height: auto; width: 60%;}
+#results a{
+    display: inline-block;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #333;
+}
+#results .red{ text-align: right; float: right;}
+#results {
+	background-color: #fff;
+    border: solid 1px #ccc;
+    position: absolute;
+    pointer-events: auto;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: block !important;
+    max-width: 100%;
+    //max-height: 100%;
+    width: 300px;
+    max-height: 350px;
+    pointer-events: auto;
+    top: 35px;
+    left: 0px;
+overflow-y: scroll;
+    a{width: 100%;
+        //height: 55.7px;
+        display: inline-table;}
+}
+small.titlebrk{word-break: break-all!important;
+    white-space: pre-line!important;}
+.td85 {
+    width: 85% !important;
+    float: left !important;
+    text-align: left;
+    font-family: $poppins-light;
+}
+.td85 a{color: #333;}
+.td15{
+    width: 15% !important;
+    float: left;
+}
+ul li img{    height: auto;
+    width: 100%;
+    max-width: 60%;}
+.red{ color: #ff0000;}
+ul li .text-right{text-align: right; float: right;}
+// #results li {
+// 	padding: 8px;
+// 	cursor: pointer;
+// 	border-top: 1px solid #cdcdcd;
+// 	transition: background-color .3s ease-in-out;
+// 	-moz-transition: background-color .3s ease-in-out;
+// 	-webkit-transition: background-color .3s ease-in-out;
+// }
+// #results li:hover {
+// 	background-color: #F7F7F7;
+// }
+// #results li:first-child {
+// 	border-top: none;
+// }
+#results a h3, #results a h4 {
+	transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-webkit-transition: color .3s ease-in-out;
+	color: #616161;
+	line-height: 1.2em;
+}
+#results a:hover h3, #results a:hover h4  {
+	color: #3b3b3b;
+	font-weight: bold;
+}
+body{ font-family: $poppins-regular, $poppins-bold, $montserrat-regular, $poppins-light, $montserrat-bold !important; font-size: 13px !important;}
+.modelevent .modal-body {
+    max-height: 350px !important;
+    overflow-y: scroll;
+}
+span.rating-icon a .fa {
+    margin-right: 3px;
+    color: $lukas-color !important;
+}
+#login input:-internal-autofill-selected, #signup input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-color: rgb(232, 240, 254) !important;
+    background-image: none !important;
+    color: -internal-light-dark(black, white) !important;
+}
+#signup input:visited{background-color: rgb(232, 240, 254) !important;}
+.modelchainstore .filer_go.success, .modelchainstore .filer_go{margin-left: 0;}
+@media screen and (max-width: 480px) {
+    #results{
+        left: 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #results{
+        left: 0px;
+    }
+    .contact-section{display: block;}
+    .contact-section .contactform, .contact-address-section{margin-bottom: 30px;}
+    .parallax h4{color: #fff;}
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #results{
+        left: 0px;
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    #results{
+        left: 0px;
+    }
+    .ui-datepicker{ top: 793.5px !important;}
+    .ui-datepicker-calendar tr th{ padding: 5px 18.98px;}
+    .ui-datepicker-calendar tr td{min-width: 53px !important;}
+}
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    #results{
+        left: 0px;
+    }
+    .ui-datepicker{left:386.013px !important; padding: 5px 0px;}
+    .ui-datepicker-calendar tr td{ min-width: 52px !important;}
+    .ui-datepicker-calendar tr th{padding: 5px 18.15px;}
+}
+// @media screen and (max-width: 1300px) and (min-width: 1200px) {
+//     #results{
+//         left: 66px;
+//         width: 239px;
+//     }
+//     .ui-datepicker{ left: 483.656px !important; width: 400px !important;}
+// }

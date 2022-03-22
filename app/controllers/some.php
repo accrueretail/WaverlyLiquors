@@ -1,0 +1,4 @@
+<?php
+
+$msg = 'Hello api';
+?>
