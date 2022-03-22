@@ -191,41 +191,41 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
 </section>
 
 
-<div  class="col-md-12 col-xs-12 catdetails">
-<div class="container">
-<div  class="row">
-<div  class="box-cat">
-<div  class="wine">
-<a  href="<?php echo $siteUrl;?>/about-wine"></a>
-</div></div>
-<div  class="box-cat">
-<div  class="beer">
-<a href="<?php echo $siteUrl;?>/about-beer"></a>
-</div>
-</div>
-<div  class="box-cat">
-<div  class="spirits">
-<a href="<?php echo $siteUrl;?>/spirits"></a>
-</div></div>
-<div  class="box-cat">
-<div  class="services">
-<a href="<?php echo $siteUrl;?>/services"></a>
-</div></div>
-<div  class="box-cat">
-<div  class="tasting">
-<a href="<?php echo $siteUrl;?>/tasting"></a>
-</div></div>
-<div  class="box-cat">
-<div  class="education">
-<a href="<?php echo $siteUrl;?>/education"></a>
-</div></div>
-<div  class="box-cat">
-<div  class="guide">
-<a  href="<?php echo $siteUrl;?>/guide"></a>
-</div>
-</div>
-</div>
-</div>
+<!-- <div  class="col-md-12 col-xs-12 catdetails">
+                        <div class="container">
+                                  <div  class="row">
+                                            <div  class="box-cat">
+                                            <div  class="wine">
+                                            <a  href="<?php echo $siteUrl;?>/about-wine"></a>
+                                            </div></div>
+                                            <div  class="box-cat">
+                                            <div  class="beer">
+                                            <a href="<?php echo $siteUrl;?>/about-beer"></a>
+                                            </div>
+                                            </div>
+                                            <div  class="box-cat">
+                                            <div  class="spirits">
+                                            <a href="<?php echo $siteUrl;?>/spirits"></a>
+                                            </div></div>
+                                            <div  class="box-cat">
+                                            <div  class="services">
+                                            <a href="<?php echo $siteUrl;?>/services"></a>
+                                            </div></div>
+                                            <div  class="box-cat">
+                                            <div  class="tasting">
+                                            <a href="<?php echo $siteUrl;?>/tasting"></a>
+                                            </div></div>
+                                            <div  class="box-cat">
+                                            <div  class="education">
+                                            <a href="<?php echo $siteUrl;?>/education"></a>
+                                            </div></div>
+                                            <div  class="box-cat">
+                                            <div  class="guide">
+                                            <a  href="<?php echo $siteUrl;?>/guide"></a>
+                                            </div>
+                                </div>
+        </div>
+</div> -->
 </div>
 
 <?php loadView('footer', array('store_details' => $store_details, 'store_home_details'=>$store_home_details));?>
