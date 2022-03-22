@@ -82,9 +82,9 @@
         <li >
           <a  href="<?php echo $siteUrl;?>/terms-conditions">T&amp;C</a>
         </li>
-        <li >
+        <!-- <li >
           <a  href="<?php echo $siteUrl;?>/shipping">Shipping</a>
-        </li>
+        </li> -->
         <li >
           <a  href="<?php echo $siteUrl;?>/contact-us">Contact Us</a>
         </li>
