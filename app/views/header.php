@@ -426,120 +426,120 @@ $stores = getStoresList();
 $stores_list = $stores->ListStore;
 ?>
 <!-- Modal -->
-<div class="modal fade modelchainstore animated fadeInRightBig" data-backdrop="static" data-keyboard="false" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div  class="modal-dialog">
-     <div  class="modal-content">
-       <div  class="modal-header">
-        <button  class="close" data-dismiss="modal" type="button">×</button>
-        <h4  class="modal-title text-center">
-          <img  src="<?php echo $siteUrl?>/assets/images/logo-popup.png"></h4>
-       </div>
-     <div  class="modal-body text-center">
-     <div>
-      <form  class="mbottom15 ng-untouched ng-pristine ng-valid" novalidate="">
-        <input type="hidden" name="setStore" value="setStore">
-        <div  class="form-inline-lg">
-          <div  class="input-group">
-            <div  class="input-group-addon input-group-addon-custom">
-              <i  class="fa fa-search"></i>
+  <!-- <div class="modal fade modelchainstore animated fadeInRightBig" data-backdrop="static" data-keyboard="false" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div  class="modal-dialog">
+        <div  class="modal-content">
+          <div  class="modal-header">
+            <button  class="close" data-dismiss="modal" type="button">×</button>
+            <h4  class="modal-title text-center">
+              <img  src="<?php echo $siteUrl?>/assets/images/logo-popup.png"></h4>
+          </div>
+        <div  class="modal-body text-center">
+              <div>
+                  <form  class="mbottom15 ng-untouched ng-pristine ng-valid" novalidate="">
+                    <input type="hidden" name="setStore" value="setStore">
+                    <div  class="form-inline-lg">
+                      <div  class="input-group">
+                        <div  class="input-group-addon input-group-addon-custom">
+                          <i  class="fa fa-search"></i>
+                        </div>
+                        <input  class="form-control ng-untouched ng-pristine ng-valid" name="search" placeholder="Search by City, Zip Code or Name" type="text">
+                        <div  class="input-group-addon">
+                          <i  class="fa fa-map-marker"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                        <?php 
+                        $stores1 = $stores2 = '';
+                        foreach($stores_list as $store){
+                          if($_SESSION['STORE_ID']== $store->StoreId){ 
+                            $stores1 .= '
+                            <div  class="row">
+                            <div  class="col-md-12 store-block">
+                            <div  class="col-md-3 img-store success text-center">
+                            <i  aria-hidden="true" class="fa fa-check-circle"></i>
+                            <img  src="'.$store->StoreImage.'">
+                            </div>
+                            <div  class="col-md-6">
+                            <h3>'.$store->StoreName.'</h3>
+                            <small  class="text-muted">'.$store->Address1.' '.$store->Address2.'<span> '.$store->City.',</span>
+                            <span>'.$store->State.'</span>
+                            <span>'.$store->Zip.'</span>
+                            </small><br>
+                            <small  class="text-muted">
+                            <i  class="icon icon-footer-contact"></i>
+                            <span ><a  href="tel:'.$store->Phone.'">Call: '.$store->Phone.'</a></span>
+                            </small>
+                            </div>
+                            <div  class="col-md-3 text-center">
+                            <table  width="100%">
+                            <tbody>
+                            <tr>
+                            <td  class="text-center">
+                            <div >
+
+                            <button store_id="'.$store->StoreId.'"  class="btn btn-default filer_go  success animated fadeInRightBig  activate" type="button"> Selected Store </button>
+                            </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                            </div>
+                            </div>';
+                  }else{
+                      $stores2 .= '
+                            <div  class="row">
+                            <div  class="col-md-12 store-block">
+                            <div  class="col-md-3 img-store success text-center">
+                            
+                            <img  src="'.$store->StoreImage.'">
+                            </div>
+                            <div  class="col-md-6">
+                            <h3>'.$store->StoreName.'</h3>
+                            <small  class="text-muted">'.$store->Address1.' '.$store->Address2.'<span> '.$store->City.',</span>
+                            <span>'.$store->State.'</span>
+                            <span>'.$store->Zip.'</span>
+                            </small><br>
+                            <small  class="text-muted">
+                            <i  class="icon icon-footer-contact"></i>
+                            <span ><a  href="tel:'.$store->Phone.'">Call: '.$store->Phone.'</a></span>
+                            </small>
+                            </div>
+                            <div  class="col-md-3 text-center">
+                            <table  width="100%">
+                            <tbody>
+                            <tr>
+                            <td  class="text-center">
+                            <div >
+
+                            <button store_id="'.$store->StoreId.'"  class="btn btn-default filer_go " type="button"> Select Store </button>
+                            </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                            </div>
+                            </div>';
+                  } 
+                  }
+                  echo $stores1;
+                  echo $stores2;
+                  ?>
+
+                  </div>
+
             </div>
-            <input  class="form-control ng-untouched ng-pristine ng-valid" name="search" placeholder="Search by City, Zip Code or Name" type="text">
-            <div  class="input-group-addon">
-              <i  class="fa fa-map-marker"></i>
+              <div  class="modal-footer buttons-container">
+                    <p >To learn more about responsible consumption, please visit <a  href="https://www.drinksmart.com" target="_blank">www.drinksmart.com</a>
+                    </p>
             </div>
           </div>
         </div>
-      </form>
-      <?php 
-      $stores1 = $stores2 = '';
-      foreach($stores_list as $store){
-        if($_SESSION['STORE_ID']== $store->StoreId){ 
-          $stores1 .= '
-          <div  class="row">
-          <div  class="col-md-12 store-block">
-          <div  class="col-md-3 img-store success text-center">
-          <i  aria-hidden="true" class="fa fa-check-circle"></i>
-          <img  src="'.$store->StoreImage.'">
-          </div>
-          <div  class="col-md-6">
-          <h3>'.$store->StoreName.'</h3>
-          <small  class="text-muted">'.$store->Address1.' '.$store->Address2.'<span> '.$store->City.',</span>
-          <span>'.$store->State.'</span>
-          <span>'.$store->Zip.'</span>
-          </small><br>
-          <small  class="text-muted">
-          <i  class="icon icon-footer-contact"></i>
-          <span ><a  href="tel:'.$store->Phone.'">Call: '.$store->Phone.'</a></span>
-          </small>
-          </div>
-          <div  class="col-md-3 text-center">
-          <table  width="100%">
-          <tbody>
-          <tr>
-          <td  class="text-center">
-          <div >
-
-          <button store_id="'.$store->StoreId.'"  class="btn btn-default filer_go  success animated fadeInRightBig  activate" type="button"> Selected Store </button>
-          </div>
-          </td>
-          </tr>
-          </tbody>
-          </table>
-          </div>
-          </div>
-          </div>';
- }else{
-    $stores2 .= '
-          <div  class="row">
-          <div  class="col-md-12 store-block">
-          <div  class="col-md-3 img-store success text-center">
-          
-          <img  src="'.$store->StoreImage.'">
-          </div>
-          <div  class="col-md-6">
-          <h3>'.$store->StoreName.'</h3>
-          <small  class="text-muted">'.$store->Address1.' '.$store->Address2.'<span> '.$store->City.',</span>
-          <span>'.$store->State.'</span>
-          <span>'.$store->Zip.'</span>
-          </small><br>
-          <small  class="text-muted">
-          <i  class="icon icon-footer-contact"></i>
-          <span ><a  href="tel:'.$store->Phone.'">Call: '.$store->Phone.'</a></span>
-          </small>
-          </div>
-          <div  class="col-md-3 text-center">
-          <table  width="100%">
-          <tbody>
-          <tr>
-          <td  class="text-center">
-          <div >
-
-          <button store_id="'.$store->StoreId.'"  class="btn btn-default filer_go " type="button"> Select Store </button>
-          </div>
-          </td>
-          </tr>
-          </tbody>
-          </table>
-          </div>
-          </div>
-          </div>';
- } 
-}
-echo $stores1;
-echo $stores2;
-?>
-
-</div>
-
-   </div>
-   <div  class="modal-footer buttons-container">
-   <p >To learn more about responsible consumption, please visit <a  href="https://www.drinksmart.com" target="_blank">www.drinksmart.com</a>
-   </p>
- </div>
- </div>
- </div>
- </div>
- </div>
+      </div>
+  </div> -->
 
 
 
