@@ -278,9 +278,9 @@ $store_filters = getStoreFilters();
         <span></span>
         <span></span>
       </button>
-      <!-- <a href="<?php echo $siteUrl;?>" class="navbar-brand lukas-logo">
+      <a href="<?php echo $siteUrl;?>" class="navbar-brand lukas-logo">
         <img alt="" class="img-responsive" src="<?php echo $_SESSION['siteUrl'];?>/assets/images/logo.png" tabindex="0">
-      </a> -->
+      </a>
     </div>
     
     <div class="pull-right">
