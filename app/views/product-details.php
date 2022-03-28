@@ -152,7 +152,7 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
 
 <div class="related-products">
 <div class="container">
-<div class="row related-products-container"> 
+<div class="row related-products-container" style="margin:auto;"> 
 Loading...
 </div> 
 </div>
