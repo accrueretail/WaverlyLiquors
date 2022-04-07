@@ -22,7 +22,7 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
 </div>
 </div>
 </div>
-
+<?php if($product['Product']['ProductName']) { ?>
    
 <div class="product-detail-main">
 
@@ -152,7 +152,7 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
 
 <div class="related-products">
 <div class="container">
-<div class="row related-products-container" style="margin:auto;"> 
+<div class="row related-products-container"> 
 Loading...
 </div> 
 </div>
@@ -332,5 +332,7 @@ Loading...
 </div>
 </div>
 </div>
-
+<?php }else{ ?> 	<div class="coming-soon coming-height">	
+  <span>No Product Found</span>	
+      </div><?php } ?>
 <?php loadView('footer', array('store_details' => $store_details, 'store_home_details'=>$store_home_details));?>
