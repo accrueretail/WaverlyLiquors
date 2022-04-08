@@ -9209,18 +9209,7 @@
       ],
       "IsInstock": true,
       "IsClubPrice": true,
-      "ListCountries": [
-        {
-          "CountryId": 0,
-          "CountryName": null,
-          "ListRegions": [
-            {
-              "RegionId": null,
-              "RegionName": null
-            }
-          ]
-        }
-      ]
+      "ListCountries": []
     },
     {
       "CategoryId": 2,
@@ -10385,18 +10374,7 @@
       ],
       "IsInstock": true,
       "IsClubPrice": true,
-      "ListCountries": [
-        {
-          "CountryId": 0,
-          "CountryName": null,
-          "ListRegions": [
-            {
-              "RegionId": null,
-              "RegionName": null
-            }
-          ]
-        }
-      ]
+      "ListCountries": []
     },
     {
       "CategoryId": 3,
@@ -30023,18 +30001,7 @@
       ],
       "IsInstock": true,
       "IsClubPrice": true,
-      "ListCountries": [
-        {
-          "CountryId": 0,
-          "CountryName": null,
-          "ListRegions": [
-            {
-              "RegionId": null,
-              "RegionName": null
-            }
-          ]
-        }
-      ]
+      "ListCountries": []
     },
     {
       "CategoryId": 5,
@@ -30047,18 +30014,7 @@
       "ListType": [],
       "IsInstock": true,
       "IsClubPrice": true,
-      "ListCountries": [
-        {
-          "CountryId": 0,
-          "CountryName": null,
-          "ListRegions": [
-            {
-              "RegionId": null,
-              "RegionName": null
-            }
-          ]
-        }
-      ]
+      "ListCountries": []
     }
   ]
 }
