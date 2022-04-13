@@ -34,7 +34,7 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
 </div>
 <div  class="button_feature col-lg-7 col-md-7 col-sm-7 hidden-xs visible-sm visible-md visible-lg">
     <button  class="btn btn-default active featured-btn first-featured-btn" category="0">All</button>
-    <button  class="btn btn-default featured-btn" category="1">Beer</button>
+<!--     <button  class="btn btn-default featured-btn" category="1">Beer</button> -->
     <button  class="btn btn-default featured-btn" category="2">Liquor</button>
     <button  class="btn btn-default featured-btn" category="3">Wine</button>
     <button  class="btn btn-default featured-btn" category="4">Mixers & More</button>
