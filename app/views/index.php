@@ -198,11 +198,11 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
                                             <div  class="wine">
                                             <a  href="<?php echo $siteUrl;?>/about-wine"></a>
                                             </div></div>
-                                            <div  class="box-cat">
+<!--                                             <div  class="box-cat">
                                             <div  class="beer">
-                                            <a href="<?php echo $siteUrl;?>/about-beer"></a>
+                                            <a href="<?php //echo $siteUrl;?>/about-beer"></a>
                                             </div>
-                                            </div>
+                                            </div> -->
                                             <div  class="box-cat">
                                             <div  class="spirits">
                                             <a href="<?php echo $siteUrl;?>/spirits"></a>
