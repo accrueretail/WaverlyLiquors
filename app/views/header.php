@@ -50,7 +50,8 @@ $store_filters = getStoreFilters();
           $cnt = 1;
           foreach($store_filters->StoreFilters as $item){
             //print_r($item);
-            if($item->CategoryName == 'Beer' || $item->CategoryName == 'Liquor' || $item->CategoryName == 'Wine' || $item->CategoryName == 'Mixers & More') {
+            //if($item->CategoryName == 'Beer' || $item->CategoryName == 'Liquor' || $item->CategoryName == 'Wine' || $item->CategoryName == 'Mixers & More') {
+	 if($item->CategoryName == 'Liquor' || $item->CategoryName == 'Wine' || $item->CategoryName == 'Mixers & More') {	
             
             ?>
             <li class="dropdown" <?php if($item->Disable == '1'){ echo "style='display:none;'";}?>>
@@ -375,7 +376,7 @@ $store_filters = getStoreFilters();
       <ul class="msidenav">
         <li><a href="<?php echo $siteUrl;?>">Home </a></li>
         <li><a href="<?php echo $siteUrl;?>/feature-products">Featured Products </a></li>
-        <li><a href="<?php echo $siteUrl;?>/buy-beer">BEER </a></li>
+<!--         <li><a href="<?php// echo $siteUrl;?>/buy-beer">BEER </a></li> -->
         <li><a href="<?php echo $siteUrl;?>/buy-liquor">LIQUOR </a></li>
         <li><a href="<?php echo $siteUrl;?>/buy-wine">WINE </a></li>
         <li><a href="<?php echo $siteUrl;?>/buy-mixers-more">MIXERS &amp; MORE </a></li>
