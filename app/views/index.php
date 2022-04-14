@@ -225,7 +225,7 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
                                             </div>
                                 </div>
         </div>
-</div> -->
+</div>
 </div>
 
 <?php loadView('footer', array('store_details' => $store_details, 'store_home_details'=>$store_home_details));?>
