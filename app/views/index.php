@@ -196,7 +196,7 @@ loadView('header', array('title' => $pro_title, 'store_details' => $store_detail
                                   <div  class="row">
                                             <div  class="box-cat">
                                             <div  class="wine">
-                                            <a  href="<?php echo $siteUrl;?>/about-wine"></a>
+                                            <a  href="<?php //echo $siteUrl;?>/about-wine"></a>
                                             </div></div>
 <!--                                             <div  class="box-cat">
                                             <div  class="beer">
