@@ -63,6 +63,7 @@ foreach($store_filters->StoreFilters as $item){
           $selected_regions[$regions->RegionId] = $regions->RegionName;
           }
           $all_regions[$regions->RegionId] = $regions->RegionName;
+	  asort($all_regions);
         }
       }   
 
