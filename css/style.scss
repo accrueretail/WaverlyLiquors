@@ -322,14 +322,11 @@ span.rating-icon a .fa {
 .modelchainstore .filer_go.success, .modelchainstore .filer_go{margin-left: 0;}
 @media screen and (max-width: 480px) {
     #results{
-        left: 0px;
+        left: 3px !important;
     }
 }
 @media screen and (max-width: 767px) {
-    #results{
-        left: 4px;
-        top: 46px;
-    }
+    #results{ left: 6px; top: 46px; width: 89%;  }
     .contact-section{display: block;}
     .contact-section .contactform, .contact-address-section{margin-bottom: 30px;}
     .parallax h4{color: #fff;}
