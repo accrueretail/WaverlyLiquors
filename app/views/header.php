@@ -396,12 +396,12 @@ $store_filters = getStoreFilters();
 <div class="input-group searchby hidden-xs hidden-sm hidden-md hidden-lg"></div>
 <div class="m-menu-tabs">
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation">
-    <a aria-controls="beer" href="<?php echo $siteUrl;?>/buy-beer">
+    <!--<li role="presentation">
+    <a aria-controls="beer" href="<?php //echo $siteUrl;?>/buy-beer">
     <i class="icon icon-beer">
     </i>
     </a>
-    </li>
+    </li> -->
     <li role="presentation">
     <a aria-controls="liquor" href="<?php echo $siteUrl;?>/buy-liquor">
     <i class="icon icon-liquor">
